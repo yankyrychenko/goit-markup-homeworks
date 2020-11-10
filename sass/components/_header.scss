@@ -62,7 +62,6 @@
 }
 .list-nav .link {
   display: inline-block;
-  padding-bottom: 8px;
 
   color: $primaryColor;
   font-weight: 500;
@@ -81,6 +80,8 @@
 }
 .link.link-current {
   position: relative;
+  padding-bottom: 8px;
+
   color: $accentColor;
 
   &:after {

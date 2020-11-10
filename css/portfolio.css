@@ -102,7 +102,6 @@ img {
 
 .list-nav .link {
   display: inline-block;
-  padding-bottom: 8px;
   color: #212121;
   font-weight: 500;
   font-size: 18px;
@@ -120,6 +119,7 @@ img {
 
 .link.link-current {
   position: relative;
+  padding-bottom: 8px;
   color: #2196f3;
 }
 

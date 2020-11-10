@@ -1,0 +1,130 @@
+footer {
+  background-color: #2f303a;
+}
+.container-footer {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  & .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #ffffff;
+
+  & .logo-web {
+    color: $accentColor;
+  }
+}
+
+.footer-location {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-address {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+}
+.footer-box {
+  margin-right: 30px;
+  width: calc((50% - 45px) / 2);
+
+  &:last-child {
+    margin-right: 0;
+    width: calc(50% - 15px);
+  }
+}
+.list-footer {
+  display: flex;
+  & .item-icon + .item-icon {
+    margin-left: 10px;
+  }
+}
+.link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color $transition250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $accentColor;
+  }
+}
+.heading-footer2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.form-subscribe {
+  display: flex;
+}
+.input-subscribe {
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+  padding: 12px 16px;
+
+  outline: none;
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  &:focus {
+    border: 1px solid $accentColor;
+  }
+}
+.btn-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  border: none;
+  width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  background: $accentColor;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.icon-subscribe {
+  margin-left: 12px;
+  fill: #ffffff;
+}

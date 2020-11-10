@@ -1,0 +1,37 @@
+.section.wwd {
+  padding-top: 0;
+}
+.wwd-list {
+  display: flex;
+}
+.wwd-list .item {
+  position: relative;
+  width: calc((100% - 2 * 30px) / 3);
+}
+.wwd-list .item + .item {
+  margin-left: 30px;
+}
+.wwd-heading {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  color: $primaryColor;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.wwd-bars-text {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 27px 0px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}

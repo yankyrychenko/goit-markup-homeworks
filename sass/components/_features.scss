@@ -2,9 +2,10 @@
   /* display: flex; */
   & .item {
     /* width: calc((100% - 3 * 30px) / 4); */
-  }
-  & .item + .item {
-    /* margin-left: 30px; */
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      /* margin-left: 30px; */
+    }
   }
   & .heading {
     margin-top: 0px;
@@ -17,8 +18,6 @@
     color: $primaryColor;
   }
   & .text {
-    margin-bottom: 30px;
-
     font-size: 14px;
     line-height: 1.71;
     color: $secondaryColor;

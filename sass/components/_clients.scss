@@ -1,16 +1,16 @@
 .list-clients {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: center;
+  align-items: center; */
 }
 .clients-heading {
-  margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $primaryColor;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
 }
 .link-clients {
@@ -32,9 +32,16 @@
   }
 }
 .clients .item {
-  width: calc((100% - 5 * 30px) / 6);
-
-  &:not(:last-child) {
+  margin-bottom: 30px;
+  width: calc((100% - 30px) / 2);
+  /* width: calc((100% - 5 * 30px) / 6); */
+  &:nth-child(2n - 1) {
     margin-right: 30px;
+  }
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  &:not(:last-child) {
+    /* margin-right: 30px; */
   }
 }

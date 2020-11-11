@@ -747,10 +747,6 @@ p {
   margin-bottom: 30px;
 }
 
-.input-form:focus .label-icon {
-  fill: #2196f3;
-}
-
 .input-form {
   padding: 11px 11px 11px 42px;
   outline: none;
@@ -760,6 +756,10 @@ p {
 
 .input-form:focus {
   border: 1px solid #2196f3;
+}
+
+.input-form:focus + .label-icon {
+  fill: #2196f3;
 }
 
 .label-icon {

@@ -657,6 +657,9 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow-y: scroll;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -669,12 +672,12 @@ p {
 }
 
 .modal {
-  position: relative;
-  top: 50%;
+  position: absolute;
+  /* top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
-  width: 528px;
+  transform: translate(-50%, -50%) scale(1); */
+  max-width: 450px;
+  width: 100%;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -685,11 +688,9 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0);
-          transform: translate(-50%, -50%) scale(0);
-}
-
+/* .backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+} */
 .modal-btn {
   position: absolute;
   top: 8px;
@@ -716,7 +717,7 @@ p {
   margin: 0px 0px 12px 0px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 
 .label-text {
@@ -740,12 +741,13 @@ p {
 }
 
 .label-form:last-of-type {
-  margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
   margin-bottom: 30px;
-  margin-left: 12px;
 }
 
-.input-form:focus + .label-icon {
+.input-form:focus .label-icon {
   fill: #2196f3;
 }
 
@@ -768,8 +770,7 @@ p {
 }
 
 .label-icon-check {
-  position: absolute;
-  top: 3px;
+  vertical-align: middle;
 }
 
 .label-comment {
@@ -818,10 +819,8 @@ p {
 }
 
 .checkbox-text {
-  text-align: center;
-  margin-left: 8px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   color: #757575;
 }
 

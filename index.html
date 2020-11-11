@@ -357,6 +357,53 @@
     </div>
   </div>
 </footer>
+<!-- Modal -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-btn" data-modal-close>
+      <svg width="11px" height="11px">
+        <use href="img/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <label class="label-form">
+        <span class="label-text">Имя</span>
+        <input class="input-form" type="text" />
+        <svg class="label-icon" width="18" height="18">
+          <use href="img/symbol-defs.svg#icon-person-black"></use>
+        </svg>
+      </label>
+      <label class="label-form">
+        <span class="label-text">Телефон</span>
+        <input class="input-form" type="tel" />
+        <svg class="label-icon" width="18" height="18">
+          <use href="img/symbol-defs.svg#icon-phone-black"></use>
+        </svg>
+      </label>
+      <label class="label-form">
+        <span class="label-text">Почта</span>
+        <input class="input-form" type="email" />
+        <svg class="label-icon" width="18" height="18">
+          <use href="img/symbol-defs.svg#icon-email-black"></use>
+        </svg>
+      </label>
+      <label class="label-form">
+        <span class="label-text">Комментарий</span>
+        <textarea class="label-comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+      </label>
+      <label class="label-form">
+        <input class="input-checkbox" type="checkbox" />
+        <svg class="label-icon-check" width="16" height="15">
+          <use href="img/symbol-defs.svg#icon-check"></use>
+        </svg>
+        <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю
+          <a href="" class="checkbox-link">Условия договора</a></span>
+      </label>
+      <button type="submit" class="btn-subscribe">Отправить</button>
+    </form>
+  </div>
+</div>
   <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>

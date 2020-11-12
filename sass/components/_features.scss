@@ -1,27 +1,30 @@
 .features-list {
-  /* display: flex; */
-  & .item {
-    /* width: calc((100% - 3 * 30px) / 4); */
-    &:not(:last-child) {
-      margin-bottom: 30px;
-      /* margin-left: 30px; */
-    }
+  @media screen and(min-width: 768px) {
+    display: flex;
   }
-  & .heading {
-    margin-top: 0px;
-    margin-bottom: 10px;
+}
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    color: $primaryColor;
+.features-list .item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
-  & .text {
-    font-size: 14px;
-    line-height: 1.71;
-    color: $secondaryColor;
-  }
+}
+
+.features-list .heading {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primaryColor;
+}
+
+.features-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: $secondaryColor;
 }
 .box-features {
   display: flex;

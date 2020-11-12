@@ -11,6 +11,13 @@
   & .item:not(:last-child) {
     margin-bottom: 9px;
   }
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .logo-footer {
@@ -48,11 +55,15 @@
   width: calc((50% - 45px) / 2); */
 
   &:last-child {
+    width: 100%;
     /* margin-right: 0;
     width: calc(50% - 15px); */
   }
   &:not(:last-child) {
     margin-bottom: 60px;
+  }
+  @media screen and(min-width: 768px) {
+    width: 50%;
   }
 }
 .list-footer {
@@ -98,6 +109,7 @@
 
   outline: none;
   width: 100%;
+  max-width: 450px;
   font-size: 16px;
   line-height: 1.25;
   border-radius: 4px;

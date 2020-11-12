@@ -1,6 +1,10 @@
 .section.wwd {
   display: none;
   padding-top: 0;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .wwd-list {
   display: flex;

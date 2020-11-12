@@ -393,11 +393,25 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
 .features-list .item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-list .item {
+    width: calc((100% - 30px) / 2);
+  }
+  .features-list .item:nth-child(2n - 1) {
+    margin-right: 30px;
+  }
+  .features-list .item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 .features-list .heading {
@@ -482,16 +496,30 @@ p {
   background-color: #f5f4fa;
 }
 
-.team .list {
-  /* display: flex; */
-}
-
-.team .item {
-  /* width: calc((100% - 3 * 30px) / 4); */
+@media screen and (min-width: 768px) {
+  .team .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .team .item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team .item {
+    width: calc((100% - 30px) / 2);
+  }
+  .team .item:nth-child(2n - 1) {
+    margin-right: 30px;
+  }
+  .team .item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
 }
 
 .team-heading {
@@ -616,7 +644,6 @@ p {
 .clients .item {
   margin-bottom: 30px;
   width: calc((100% - 30px) / 2);
-  /* width: calc((100% - 5 * 30px) / 6); */
 }
 
 .clients .item:nth-child(2n - 1) {
@@ -627,8 +654,18 @@ p {
   margin-bottom: 0px;
 }
 
-.clients .item:not(:last-child) {
-  /* margin-right: 30px; */
+@media screen and (min-width: 768px) {
+  .clients .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 30px * 2) / 3);
+  }
+  .clients .item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .clients .item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
 }
 
 .page-footer {
@@ -794,8 +831,6 @@ p {
   left: 0;
   height: 100%;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   overflow-y: scroll;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
@@ -809,7 +844,10 @@ p {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1); */

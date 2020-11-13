@@ -6,16 +6,7 @@
     display: block;
   }
 }
-.wwd-list {
-  display: flex;
-}
-.wwd-list .item {
-  position: relative;
-  width: calc((100% - 2 * 30px) / 3);
-}
-.wwd-list .item + .item {
-  margin-left: 30px;
-}
+
 .wwd-heading {
   margin-top: 0px;
   margin-bottom: 50px;
@@ -26,11 +17,26 @@
   line-height: 1.16;
   text-align: center;
 }
+
+.wwd-list {
+  display: flex;
+}
+
+.wwd-list .item {
+  position: relative;
+  width: calc((100% - 2 * 30px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .wwd-bars-text {
   position: absolute;
   bottom: 0;
   margin: 0;
   padding: 27px 0px;
+
   width: 100%;
   font-weight: 700;
   font-size: 14px;

@@ -24,8 +24,8 @@
   flex-grow: 1;
 
   @media screen and(max-width: 767px) {
-    display: none;
     position: absolute;
+    display: none;
     top: 100%;
     left: 0;
     padding-top: 60px;
@@ -73,12 +73,12 @@
 .list-nav .link {
   display: inline-block;
 
-  color: $primaryColor;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: $primaryColor;
 
   transition: color $transition250ms, fill $transition250ms;
 
@@ -113,10 +113,12 @@
     background: $accentColor;
     border-radius: 2px;
   }
+
   @media screen and(max-width: 767px) {
     padding-bottom: 8px;
   }
 }
+
 .adr {
   @media screen and(min-width: 768px) {
     display: flex;
@@ -124,17 +126,38 @@
     margin-left: auto;
   }
 }
+
+.adr-list {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.adr-list .item:not(:last-child) {
+  margin-bottom: 16px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}
+
 .adr-list .link {
   display: inline-block;
 
-  color: $secondaryColor;
-  fill: $secondaryColor;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
+  color: $secondaryColor;
+  fill: $secondaryColor;
 
   transition: color $transition250ms, fill $transition250ms;
 
@@ -157,28 +180,10 @@
     line-height: 1.14;
   }
 }
-.adr-list {
-  @media screen and(min-width: 1200px) {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.adr-list .item:not(:last-child) {
-  @media screen and(max-width: 767px) {
-    margin-bottom: 16px;
-  }
-  @media screen and(min-width: 768px) {
-    margin-bottom: 10px;
-  }
-  @media screen and(min-width: 1200px) {
-    margin-bottom: 0;
-    margin-right: 30px;
-  }
-}
 
 .icon-header {
   margin-right: 10px;
+
   @media screen and(min-width: 768px) and (max-width: 1199px) {
     margin-right: 8px;
   }

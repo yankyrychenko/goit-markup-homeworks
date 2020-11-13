@@ -9,6 +9,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
   transition: fill $transition250ms;
 
   .icon-menu-close {
@@ -25,9 +26,9 @@
 
   &:hover,
   &:focus {
-    color: $accentColor;
     fill: $accentColor;
   }
+
   @media screen and(min-width: 768px) {
     display: none;
   }

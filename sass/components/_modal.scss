@@ -36,6 +36,7 @@
     left: 50%;
     min-width: 528px;
     transform: translate(-50%, -50%) scale(1);
+
     transition: transform $transition250ms;
   }
 }
@@ -80,14 +81,6 @@
   }
 }
 
-.label-text {
-  margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: $secondaryColor;
-}
-
 .label-form {
   position: relative;
   display: flex;
@@ -102,8 +95,18 @@
   }
 }
 
+.label-text {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $secondaryColor;
+}
+
 .input-form {
   padding: 11px 11px 11px 42px;
+
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -124,10 +127,6 @@
   fill: $primaryColor;
 }
 
-.label-icon-check {
-  vertical-align: middle;
-}
-
 .label-comment {
   outline: none;
   resize: none;
@@ -141,10 +140,6 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  &:focus {
-    border: 1px solid $accentColor;
-  }
-
   &::placeholder {
     font-size: 14px;
     line-height: 1.14;
@@ -152,21 +147,10 @@
 
     color: rgba(117, 117, 117, 0.5);
   }
-}
 
-.checkbox-text {
-  font-size: 12px;
-  line-height: 1.16;
-  color: $secondaryColor;
-
-  @media screen and(min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.71;
+  &:focus {
+    border: 1px solid $accentColor;
   }
-}
-
-.checkbox-link {
-  color: $accentColor;
 }
 
 .input-checkbox {
@@ -186,12 +170,24 @@
 }
 
 .label-icon-check {
+  vertical-align: middle;
+
   fill: #ffffff;
   border: 2px solid $primaryColor;
   border-radius: 2px;
 }
 
-.form .btn-subscribe {
-  margin-left: auto;
-  margin-right: auto;
+.checkbox-text {
+  font-size: 12px;
+  line-height: 1.16;
+  color: $secondaryColor;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.checkbox-link {
+  color: $accentColor;
 }

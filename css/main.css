@@ -576,6 +576,13 @@ p {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-heading {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .name {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -661,6 +668,13 @@ p {
   font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-heading {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .link-clients {

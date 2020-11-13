@@ -98,6 +98,7 @@ p {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {

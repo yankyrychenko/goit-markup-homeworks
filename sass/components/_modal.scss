@@ -34,6 +34,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    min-width: 528px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform $transition250ms;
   }
@@ -73,6 +74,10 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
+
+  @media screen and(min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .label-text {
@@ -153,6 +158,11 @@
   font-size: 12px;
   line-height: 1.16;
   color: $secondaryColor;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-link {

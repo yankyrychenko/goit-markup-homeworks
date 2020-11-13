@@ -1,10 +1,11 @@
 .backdrop {
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
+
   height: 100%;
   width: 100%;
-
   overflow-y: scroll;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
@@ -21,9 +22,6 @@
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1); */
 
   max-width: 450px;
   width: 100%;
@@ -31,12 +29,21 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform $transition250ms;
+
+  @media screen and(min-width: 1200px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $transition250ms;
+  }
 }
 
-/* .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-} */
+.backdrop.is-hidden .modal {
+  @media screen and(min-width: 1200px) {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
 
 .modal-btn {
   position: absolute;

@@ -63,6 +63,23 @@ p {
   }
 }
 
+.section-heading {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-heading {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -275,6 +292,8 @@ p {
 
 @media screen and (min-width: 1200px) {
   .adr-list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-size: 14px;
     line-height: 1.14;
   }

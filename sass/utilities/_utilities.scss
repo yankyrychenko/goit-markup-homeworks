@@ -3,11 +3,13 @@ body {
   font-family: Roboto;
   letter-spacing: 0.03em;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
+
 h1,
 h2,
 h3,
@@ -17,6 +19,13 @@ h6,
 p {
   margin: 0;
 }
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -26,6 +35,7 @@ p {
     padding-bottom: 94px;
   }
 }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -44,8 +54,19 @@ p {
     width: 1200px;
   }
 }
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+
+.section-heading {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  color: $primaryColor;
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }

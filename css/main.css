@@ -20,6 +20,12 @@ p {
   margin: 0;
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -55,12 +61,6 @@ p {
   .container {
     width: 1200px;
   }
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .page-header {
@@ -291,12 +291,12 @@ p {
 }
 
 .logo {
-  color: #212121;
   font-family: Raleway;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.16;
   text-decoration: none;
+  color: #212121;
 }
 
 @media screen and (min-width: 1200px) {
@@ -309,19 +309,7 @@ p {
 .logo-footer {
   display: inline-block;
   margin-bottom: 20px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.16;
-  text-decoration: none;
   color: #ffffff;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo-footer {
-    font-size: 26px;
-    line-height: 1.19;
-  }
 }
 
 .logo-web {
@@ -501,13 +489,12 @@ p {
 }
 
 .wwd-heading {
-  margin-top: 0px;
   margin-bottom: 50px;
-  color: #212121;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  color: #212121;
 }
 
 .wwd-list {
@@ -664,7 +651,7 @@ p {
   fill: #ffffff;
 }
 
-.clients-heading {
+.section-heading {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
@@ -674,7 +661,8 @@ p {
 }
 
 @media screen and (min-width: 1200px) {
-  .clients-heading {
+  .section-heading {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.16;
   }

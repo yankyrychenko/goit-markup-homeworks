@@ -36,6 +36,11 @@
   & .logo-web {
     color: $accentColor;
   }
+
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-location {

@@ -7,7 +7,7 @@
         "../sass/utilities/_variables.scss",
         "../sass/components/_header.scss",
         "../sass/components/_logo.scss",
-        "../sass/components/_portfolio.scss",
+        "../sass/components/_portfolio-comp.scss",
         "../sass/components/_footer.scss",
         "../sass/components/_mobile-btn.scss"
     ],

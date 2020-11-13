@@ -83,7 +83,7 @@
   transition: background-color $transition250ms, fill $transition250ms;
 
   &:hover,
-  :focus {
+  &:focus {
     background-color: $accentColor;
     fill: #ffffff;
   }

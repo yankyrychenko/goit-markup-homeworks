@@ -103,7 +103,7 @@
   &:after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
 
     display: block;
     width: 100%;

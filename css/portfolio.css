@@ -118,6 +118,18 @@ p {
           flex-grow: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-container {
+    margin-left: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    margin-left: 93px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     position: absolute;
@@ -145,13 +157,6 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .list-nav {
-    margin-left: 93px;
   }
 }
 
